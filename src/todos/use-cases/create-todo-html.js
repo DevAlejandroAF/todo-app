@@ -19,7 +19,8 @@ const createTodoHTML = ( todo ) => {
   const liElement = document.createElement('li');
   liElement.innerHTML = html;
   liElement.setAttribute('data-id', id);
-  if ( todo.done ) liElement.classList('completed');
+  if ( todo.done )
+    liElement.classList.add('completed');
   return liElement;
 }
 
